@@ -18,5 +18,13 @@ WordCount Example
 SumData Example
 <pre>
 [user@server bin]$ ./spark-submit --master spark://host1:7077 --deploy-mode cluster 
-                                  --class idv.jack.example.SumData /home/user1/SparkTest/build/libs/SparkTest.jar                                              file:///home/user1/bbb.txt file:///home/user1/sparkresult/output3
+                                  --class idv.jack.example.SumData /home/user1/SparkTest/build/libs/SparkTest.jar 
+                                  file:///home/user1/bbb.txt file:///home/user1/sparkresult/output3
+</pre>
+
+Distinct Example
+<pre>
+[user@server bin]$ ./spark-submit --master spark://host1:7077 --deploy-mode cluster 
+                                  --class idv.jack.example.DistinctData /home/user1/SparkTest/build/libs/SparkTest.jar
+                                  file:///home/user1/ccc.txt file:///home/user1/sparkresult/output5
 </pre>
